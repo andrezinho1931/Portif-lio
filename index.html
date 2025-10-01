@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Portifólio</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
     </nav>
 
     <main id="inicio" class="cabecalho">
-            <img src="img/fotoPerfil.png" alt="Foto André" class="foto-perfil">
+            <img src="assets/img/fotoPerfil.png" alt="Foto André" class="foto-perfil">
             <h1>André Filho</h1>
             <p class="cabecalho-sub-titulo">Programador</p>
     </main>
@@ -28,11 +29,11 @@
         <h2 class="sobre-titulo" >Sobre mim</h2>
         <div class="sobre-caixa" >
             <p class="sobre-paragrafo" >
-                Sou um programador apaixonado por tecnologia e resolução de problemas, com experiência em desenvolvimento de software e criação de soluções eficientes. Tenho conhecimento em [linguagens e tecnologias que você domina, ex: JavaScript, Python, Java, React, Node.js] e gosto de trabalhar tanto no desenvolvimento backend quanto frontend.
+                Tenho um perfil curioso, proativo e dedicado, sempre em busca de evolução pessoal e profissional. Gosto de aprender continuamente e de enfrentar novos desafios com determinação. Valorizo o trabalho em equipe, a organização e o compromisso com a qualidade em tudo o que me proponho a fazer.
 
-Estou sempre buscando aprimorar minhas habilidades e aprender novas tecnologias para criar sistemas inovadores e funcionais. Tenho experiência em [mencione áreas relevantes, como desenvolvimento web, mobile, APIs, banco de dados, etc.] e sou comprometido com boas práticas de código, performance e usabilidade.
-
-Gosto de desafios e de colaborar em equipe para transformar ideias em realidade por meio da programação.
+                Sou uma pessoa competitiva, apaixonada por desporto e que acredita na superação como caminho para o crescimento. Encaro cada desafio como uma oportunidade de melhorar, e mesmo diante de derrotas, busco tirar aprendizados para evoluir ainda mais. Quando assumo uma responsabilidade, coloco toda a minha energia e esforço para alcançar os melhores resultados.
+                
+                Sou um programador entusiasta por tecnologia e resolução de problemas, com experiência prática em projetos web que envolvem tanto o frontend quanto o backend, desde landing pages até aplicações com banco de dados.  
             </p> 
         </div>
     </section>
@@ -41,46 +42,74 @@ Gosto de desafios e de colaborar em equipe para transformar ideias em realidade 
         <h2 class="projetos-titulo">Meus projetos</h2>
         <div class="projetos-caixa" >
 
+            <a href="https://github.com/andrezinho1931/Iwant" target="_blank">
+                <div class="projetos-card">
+                    <img src="assets/img/iwant4.png" alt="Projeto 1" class="projetos-imagem">
+                    <div class="caixa-textos-projetos">
+                        <h3 class="info-projetos">Iwant</h3>
+                        <p class="paragrafo-projetos">Aplicação web de compra e venda de materiais universitários, feito com C# e ASPNET, a base de dados utilizada foi o SQL SERVER.</p>    
+                    </div>
+                </div>
+            </a>
+            
+
+            <a href="https://github.com/andrezinho1931/gestor-de-tarefas-django" target="_blank">
             <div class="projetos-card">
-                <img src="img/iwant4.png" alt="Projeto 1" class="projetos-imagem">
+                <img src="assets/img/tarefas.jpg" alt="Projeto 2" class="projetos-imagem">
                 <div class="caixa-textos-projetos">
-                   <h3 class="info-projetos">Aplicacao de Compra e venda</h3>
-                   <p class="paragrafo-projetos">Descrição do projeto 1</p>    
+                   <h3 class="info-projetos">Gestor de Tarefas</h3>
+                   <p class="paragrafo-projetos">Sistema de Gestão de Tarefas pessoal, feito com python e django.</p>
                 </div>
             </div>
+            </a>
 
+            <a href="https://melcar.netlify.app/" target="_blank">
             <div class="projetos-card">
-                <img src="img/tarefas.jpg" alt="Projeto 2" class="projetos-imagem">
+                <img src="assets/img/estitica.png" alt="Projeto 2" class="projetos-imagem">
                 <div class="caixa-textos-projetos">
-                   <h3 class="info-projetos">Sistema de Gestão de Tarefas</h3>
-                   <p class="paragrafo-projetos">Descrição do projeto 2</p>
+                   <h3 class="info-projetos">Estética Automotiva</h3>
+                   <p class="paragrafo-projetos">Landing-page para uma estética automotiva.</p>
                 </div>
             </div>
+            </a>
 
+            
+            <a href="https://magenta-pegasus-a725a1.netlify.app/" target="_blank">
             <div class="projetos-card">
-                <img src="img/moveis.jpg" alt="Projeto 2" class="projetos-imagem">
+                <img src="assets/img/pizza.jpg" alt="Projeto 2" class="projetos-imagem">
                 <div class="caixa-textos-projetos">
-                   <h3 class="info-projetos">Loja de movéis</h3>
-                   <p class="paragrafo-projetos">Descrição do projeto 2</p>
+                   <h3 class="info-projetos">Pizzaria</h3>
+                   <p class="paragrafo-projetos">Landing-page para uma pizzaria.</p>
                 </div>
             </div>
+            </a>
 
+                <a href="https://lighthearted-custard-4a2200.netlify.app/" target="_blank">
+            <div class="projetos-card">
+                <img src="assets/img/robo.png" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                   <h3 class="info-projetos">AutomateIA</h3>
+                   <p class="paragrafo-projetos">Landing-page para uma empresa de automação com inteligência artificial.</p>
+                </div>
+            </div>
+            </a>
         </div>
     </section>
 
     <section id="contato" class="contatos">
         <h2 class="contatos-titulo">Entre em Contato</h2>
-            <form class="form-contato" id="form">
+            <form class="form-contato" id="form" onsubmit="enviarWhats(event)">
                 <div class="group-form">
-                    <input placeholder="Nome" class="campo-form">
+                    <input id="nome" placeholder="Nome" class="campo-form">
                 </div>
                 <div class="group-form">
-                    <textarea class="campo-form" placeholder="Digite sua mensagem"></textarea>
+                    <textarea id="mensagem" class="campo-form" placeholder="Digite sua mensagem"></textarea>
                 </div>
                 
                 <button type="submit" class="botao-form" > Enviar whatsapp</button>
             </form>
     </section>
 
+        <script src="assets/js/main.js"></script>
 </body>
 </html>
